@@ -1,0 +1,144 @@
+@import "../../../App.scss";
+.team-section {
+  @include size(500px, 800px);
+  border-radius: 20px;
+  box-shadow: -1px 5px 20px 0px rgba(50, 50, 50, 0.75);
+  margin: 30px auto;
+  padding-top: 10px;
+
+  h1 {
+    font-weight: 300;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  div:nth-child(2) {
+    @include size(auto, 80%);
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 70px;
+    button {
+      @include size(235px, 235px);
+      background-color: transparent;
+      border-radius: 10px;
+      box-shadow: -1px 5px 20px 0px rgba(50, 50, 50, 0.404);
+      color: #000;
+      cursor: pointer;
+      font-family: "Roboto", sans-serif;
+      font-size: 15px;
+      outline: none;
+      i {
+        margin-bottom: 15px;
+
+        font-size: 40px;
+        color: #000;
+      }
+      &:hover {
+        border: 1px solid $orange;
+        color: $orange;
+        i {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.team-section-icon {
+  @include size(80px, 80px);
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 75px;
+}
+
+// POP UP
+.modal {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+
+  .modal-main {
+    @include size(450px, 470px);
+    background: white;
+    border-radius: 25px;
+    left: 50%;
+    position: relative;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  i {
+    color: #000;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    &:hover {
+      color: $orange;
+    }
+  }
+  h1,
+  p {
+    font-weight: 200;
+    text-align: center;
+  }
+  h1 {
+    padding-top: 40px;
+  }
+  p {
+    margin-top: 10px;
+  }
+  img {
+    @include size(255px, 300px);
+    margin: auto;
+    display: block;
+  }
+  div {
+    bottom: 65px;
+    left: 22%;
+    position: absolute;
+    width: 375px;
+  }
+  input {
+    @include size(40px, 255px);
+    background-color: #f0f0f0;
+    border-radius: 35px;
+    border: none;
+    color: #000;
+    font-size: 12px;
+    letter-spacing: 1px;
+    outline: none;
+    padding-left: 15px;
+  }
+}
+
+.modal-button {
+  @include size(40px, 100px);
+  background-color: #ff7233;
+  border-radius: 35px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 11px;
+  left: -100px;
+  letter-spacing: 1px;
+  position: relative;
+  transition: box-shadow 0.5s ease-in;
+  z-index: 1;
+  &:hover {
+    box-shadow: -1px 5px 20px 0px rgba(50, 50, 50, 0.404);
+  }
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}

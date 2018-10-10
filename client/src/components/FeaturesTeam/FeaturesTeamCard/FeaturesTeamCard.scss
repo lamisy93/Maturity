@@ -1,0 +1,80 @@
+@import "../../../App.scss";
+
+.ftWrapper {
+  @include size(auto, 1200px);
+  margin: 20px auto;
+  justify-content: center;
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.ft-card {
+  @include size(135px, 280px);
+  border-radius: 5px;
+  box-shadow: 0px 0px 22px 0px rgba(50, 50, 50, 0.25);
+  cursor: pointer;
+  margin: 35px 30px;
+  padding: 14px 25px;
+  position: relative;
+  transition: all 0.3s ease-in;
+  h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+  h3,
+  p {
+    font-weight: 300;
+    text-align: right;
+  }
+  .hr {
+    @include size(1px, 100%);
+    margin: auto;
+    margin-bottom: 10px;
+    background-color: rgba(73, 73, 73, 0.747);
+  }
+  p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    &:last-child {
+      line-height: 20px;
+      text-align: left;
+    }
+  }
+  &:hover {
+    border: 1px solid #000;
+    box-shadow: none;
+  }
+}
+a:nth-child(3) .ft-card h3 {
+  font-size: 21px;
+}
+
+.ft-card-icon {
+  @include size(80px, 80px);
+  border-radius: 50%;
+  left: 33px;
+  position: absolute;
+  top: -30px;
+}
+
+.far,
+.fas:not(.fa-times) {
+  color: #fff;
+  display: inline-block;
+  font-size: 30px;
+  line-height: 80px;
+  margin: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.ft-card-statut {
+  background: url("../../images/Status.png") 0 0 no-repeat;
+  background-size: cover;
+  @include size(20px, 20px);
+  float: left;
+  margin-right: 10px;
+}

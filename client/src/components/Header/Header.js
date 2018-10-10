@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import {  Link } from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import "./Header.scss";
 
 export default class componentName extends Component {
   render() {
@@ -9,6 +10,6 @@ export default class componentName extends Component {
           <h2>Team Maturity Web</h2>
         </Link>
       </header>
-    )
+    );
   }
 }

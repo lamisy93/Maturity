@@ -10,6 +10,7 @@ createCampaign = require("./createCampaign.js"); // import de la fonction
 displayCampaign = require("./displayCampaign.js");
 displayQuestions = require("./displayQuestions.js");
 createReponse = require("./campaign.js");
+getFeaturesTeam = require("./getFeaturesTeam.js");
 
 var router = express.Router();
 
@@ -45,6 +46,11 @@ router.get("/", (req, res) => {
 
 router.post("/campaign", (req, res) => {
   createReponse(req, res, database.connection);
+  console.log("Corps de la requête !", req.body);
+});
+
+router.get("/getfeaturesTeam", (req, res) => {
+  getFeaturesTeam(req, res, database.connection);
   console.log("Corps de la requête !", req.body);
 });
 

@@ -7,7 +7,7 @@ const displayQuestionsModel = function displayQuestionsModel(connection) {
     var sql;
 
     sql =
-      "SELECT number, cat.wording as wordingcat, ques.wording as wordingques, url FROM question as ques INNER JOIN categorie as cat ON cat.id = ques.categorie_id";
+      "SELECT ques.id as idques, number, cat.wording as wordingcat, ques.wording as wordingques, url FROM question as ques INNER JOIN categorie as cat ON cat.id = ques.categorie_id";
 
     connection.query(sql, [id], (error, results, fields) => {
       // console.log(this.sql); // affiche la dernière requête SQL, pratique pour deboguer
