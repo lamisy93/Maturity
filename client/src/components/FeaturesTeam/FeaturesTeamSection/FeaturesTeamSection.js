@@ -10,7 +10,7 @@ export default class FeaturesTeamSection extends Component {
     sessionStorage.setItem("ft-name", props.match.params.teamName);
     this.Name = sessionStorage.getItem("ft-name");
     this.Id = sessionStorage.getItem("ft-id");
-    this.getCampaign = this.getCampaign.bind(this);
+    // this.getCampaign = this.getCampaign.bind(this);
   }
   state = {
     show: false,
@@ -50,33 +50,33 @@ export default class FeaturesTeamSection extends Component {
   //     );
   // };
 
-  getCampaign(event) {
-    var data = {
-      name: this.state.name,
-      date: this.state.date,
-      state: this.state.state
-    };
-    console.log(data);
-    fetch("http://localhost:5000/api/v1/campaign", {
-      method: "GET",
-      headers: { "Content-Type": "application/json" }
-    })
-      .then(function(response) {
-        if (response.status >= 400) {
-          throw new Error("Bad response from server");
-        }
-        return response.json();
-      })
-      .then(function(data) {
-        console.log(data);
-        if (data === "success") {
-          window.self.setState({ Campaign: data });
-        }
-      })
-      .catch(function(err) {
-        console.log(err);
-      });
-  }
+  // getCampaign(event) {
+  //   var data = {
+  //     name: this.state.name,
+  //     date: this.state.date,
+  //     state: this.state.state
+  //   };
+  //   console.log(data);
+  //   fetch("http://localhost:5000/api/v1/campaign", {
+  //     method: "GET",
+  //     headers: { "Content-Type": "application/json" }
+  //   })
+  //     .then(function(response) {
+  //       if (response.status >= 400) {
+  //         throw new Error("Bad response from server");
+  //       }
+  //       return response.json();
+  //     })
+  //     .then(function(data) {
+  //       console.log(data);
+  //       if (data === "success") {
+  //         window.self.setState({ Campaign: data });
+  //       }
+  //     })
+  //     .catch(function(err) {
+  //       console.log(err);
+  //     });
+  // }
 
   createCampaign = event => {
     var data = {
@@ -127,7 +127,7 @@ export default class FeaturesTeamSection extends Component {
               to={{ pathname: `/FeaturesTeamCampaign/${this.Name}/${this.Id}` }}
             >
               <button
-                onClick={this.getCampaign}
+                // onClick={this.getCampaign}
                 className="displayCampaigns-button"
                 id="button-display"
               >

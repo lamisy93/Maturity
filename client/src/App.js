@@ -6,6 +6,7 @@ import Form from "./components/Form/Form";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import FeaturesTeamSection from "./components/FeaturesTeam/FeaturesTeamSection/FeaturesTeamSection";
 import FeaturesTeamCampaign from "./components/FeaturesTeam/FeaturesTeamCampaign/FeaturesTeamCampaign";
+import Result from "./components/FeaturesTeam/Campaign/Result";
 class App extends Component {
   constructor() {
     super();
@@ -56,6 +57,7 @@ class App extends Component {
             path="/FeaturesTeamCampaign/:teamName?/:teamId?"
             component={FeaturesTeamCampaign}
           />
+          <Route path="/Result/:teamName?/:teamId?" component={Result} />
         </div>
       </Router>
     );

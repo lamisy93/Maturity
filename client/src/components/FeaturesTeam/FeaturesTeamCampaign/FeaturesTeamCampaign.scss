@@ -1,0 +1,134 @@
+html {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-weight: 300;
+}
+
+div.statut {
+  margin-top: 20px;
+  display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 1200px;
+  height: 500px;
+  border: transparent;
+  border-radius: 5%;
+  position: relative;
+  box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.42);
+}
+
+div.cours {
+  float: left;
+  margin-top: 30px;
+  margin-left: 3%;
+  width: 45%;
+  height: 400px;
+  border: transparent;
+  border-radius: 5%;
+  box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.42);
+  background: linear-gradient(to right, #ff7333, #ffaa33);
+  color: #fff;
+  font-size: 25px;
+}
+
+i.far.fa-calendar-alt {
+  font-size: 4em;
+  color: #fff;
+  left: 22%;
+  top: 45%;
+}
+
+div.A {
+  float: right;
+  margin-right: 4%;
+  width: 40%;
+  height: 200px;
+  border: transparent;
+  border-radius: 5%;
+  box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.42);
+  background: linear-gradient(to right, #ff7333, #ffaa33);
+  color: #fff;
+  font-size: 25px;
+}
+
+div.B {
+  float: right;
+  margin-top: 2%;
+  margin-right: 4%;
+  width: 40%;
+  height: 200px;
+  border: transparent;
+  border-radius: 5%;
+  box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.42);
+  background: linear-gradient(to right, #ff7333, #ffaa33);
+  color: #fff;
+  font-size: 25px;
+}
+
+hr.statut {
+  border: 0;
+  left: 38%;
+  width: 3%;
+  top: 220px;
+  border-top: 3px solid #ff7233;
+  transition: width 0.5s ease-out;
+  -webkit-transition: width 0.5s ease-out;
+}
+hr.statut:hover {
+  width: 20%;
+}
+
+h1.titre {
+  font-size: 50px;
+  font-weight: 200;
+  text-align: center;
+  color: black;
+}
+
+h1.statut {
+  font-size: 50px;
+  font-weight: 200;
+  position: absolute;
+  left: 0px;
+  margin-top: 60px;
+}
+
+i.far.fa-handshake.statut {
+  top: 5%;
+  left: 45%;
+  height: 95px;
+  width: 95px;
+  background-color: #fe861b;
+  border-radius: 50%;
+  position: absolute;
+  line-height: 20px;
+  text-align: center;
+  line-height: 90px;
+  font-size: 40px;
+  color: #fff;
+  margin: auto;
+  display: inline-block;
+}
+
+p.termine {
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+div.A > i.far.fa-check-circle.validate {
+  color: #fff;
+  top: 22%;
+  font-size: 2em;
+  left: 890px;
+}
+
+div.B > i.far.fa-check-circle.validate {
+  color: #fff;
+  top: 55%;
+  font-size: 2em;
+  left: 890px;
+}
+
+p {
+  color: white;
+}

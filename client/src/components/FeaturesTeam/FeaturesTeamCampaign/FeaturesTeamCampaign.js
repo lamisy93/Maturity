@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./FeaturesTeamCampaign.scss";
+import { Link } from "react-router-dom";
 
 export default class FeaturesTeamCampaign extends Component {
   constructor(props) {
@@ -37,8 +39,11 @@ export default class FeaturesTeamCampaign extends Component {
         this.state.campaign[i].state === 0
       ) {
         data.push(this.state.campaign[i]);
+        // let state = this.state.campaign[i].state;
+        // return state = "En cours";
       }
     }
+
     return data.map((campaign, key) => (
       <div key={key}>
         {campaign.namecamp} {campaign.state} {campaign.date}
@@ -58,32 +63,54 @@ export default class FeaturesTeamCampaign extends Component {
     }
     return data.map((campaign, key) => (
       <div key={key}>
-        {campaign.namecamp} {campaign.state} {campaign.date}
+        {"Campagne :"} {campaign.namecamp} {"Statut :"} {campaign.state}{" "}
+        {"Fait le :"}
+        {campaign.date}
       </div>
     ));
   };
 
   render() {
     if (this.state.campaign.length === 0) {
+      console.log(this.state.campaign.length);
       return <p>Aucune campagne enregistrée</p>;
     } else {
+      console.log(this.state.campaign.length);
       return (
         <div className="ft-campaign">
-          <div className="ft-campaign-icon">
-            <i className="fas fa-vial" />
-          </div>
-          <div className="ft-campaign-section">
-            <div>
-              <div className="en-cours">
-                <div>{this.getCampaignInProgress(this.Id)}</div>
-                <i className="far fa-calendar-alt" />
-              </div>
-              <div className="terminee">
-                <div>{this.getCampaignsFinish(this.Id)}</div>
-                <i className="far fa-calendar-alt" />
+          <a href="/">
+            <i class="fas fa-bars ham" alt="#" />
+          </a>
+          <h1 class="titre">Historique des campagnes</h1>
+          <hr class="statut" />
+
+          <div class="statut">
+            <div class="cours">
+              <i class="far fa-calendar-alt" />
+              <p>Campagne en cours</p>
+              <div>{this.getCampaignInProgress(this.Id)}</div>
+            </div>
+
+            <div class="termine">
+              <Link to={{ pathname: `/Result/${this.Name}/${this.Id}` }}>
+                <div class="A">
+                  <p class="termine">
+                    Campagne terminée
+                    <div>{this.getCampaignsFinish(this.Id)}</div>
+                  </p>
+                  <i class="far fa-check-circle validate " />
+                </div>
+              </Link>
+
+              <div class="B">
+                <p class="termine">
+                  Campagne {this.Name}
+                  <br />
+                  25/10/2018
+                </p>
+                <i class="far fa-check-circle validate" />
               </div>
             </div>
-            <div />
           </div>
         </div>
       );
