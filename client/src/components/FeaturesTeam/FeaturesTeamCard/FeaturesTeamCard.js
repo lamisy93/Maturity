@@ -68,7 +68,7 @@ export default class FeaturesTeam extends Component {
                 <i className={ft.icon} />
               </div>
               <h3>{ft.name}</h3>
-              <p>{this.getLastCampaignName(ft.id)}</p>
+              <p className="campaignName">{this.getLastCampaignName(ft.id)}</p>
               <div className="hr" />
               <div className="ft-card-statut" />
 

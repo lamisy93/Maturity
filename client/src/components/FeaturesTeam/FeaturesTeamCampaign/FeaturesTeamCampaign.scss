@@ -5,20 +5,25 @@ html {
 }
 
 div.statut {
-  margin-top: 20px;
+  margin-top: 75px;
   display: inline-block;
-  padding-top: 30px;
+  padding-top: 60px;
   padding-bottom: 50px;
   width: 1200px;
-  height: 500px;
+  height: 575px;
   border: transparent;
-  border-radius: 5%;
+  border-radius: 35px;
   position: relative;
   box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.42);
+  overflow-y: auto;
+  p {
+    color: white;
+  }
 }
 
 div.cours {
   float: left;
+  padding-top: 8%;
   margin-top: 30px;
   margin-left: 3%;
   width: 45%;
@@ -41,8 +46,8 @@ i.far.fa-calendar-alt {
 div.A {
   float: right;
   margin-right: 4%;
-  width: 40%;
-  height: 200px;
+  width: 43%;
+  height: 215px;
   border: transparent;
   border-radius: 5%;
   box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.42);
@@ -55,8 +60,8 @@ div.B {
   float: right;
   margin-top: 2%;
   margin-right: 4%;
-  width: 40%;
-  height: 200px;
+  width: 43%;
+  height: 215px;
   border: transparent;
   border-radius: 5%;
   box-shadow: 0px 0px 24px 0px rgba(50, 50, 50, 0.42);
@@ -129,6 +134,13 @@ div.B > i.far.fa-check-circle.validate {
   left: 890px;
 }
 
-p {
-  color: white;
+img.noCampaign {
+  margin-top: 10%;
 }
+
+// div.cercle {
+//   border: 1px solid black;
+//   border-radius: 50%;
+//   width: 100px;
+//   height: 100px;
+// }

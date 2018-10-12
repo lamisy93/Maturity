@@ -63,12 +63,12 @@
   z-index: 2;
 
   .modal-main {
-    @include size(450px, 470px);
+    @include size(550px, 570px);
     background: white;
     border-radius: 25px;
     left: 50%;
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);
   }
 
@@ -92,9 +92,10 @@
   }
   p {
     margin-top: 10px;
+    color: black;
   }
   img {
-    @include size(255px, 300px);
+    @include size(285px, 340px);
     margin: auto;
     display: block;
   }
@@ -102,15 +103,15 @@
     bottom: 65px;
     left: 22%;
     position: absolute;
-    width: 375px;
+    width: 422px;
   }
   input {
-    @include size(40px, 255px);
+    @include size(60px, 275px);
     background-color: #f0f0f0;
     border-radius: 35px;
     border: none;
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 1px;
     outline: none;
     padding-left: 15px;
@@ -118,13 +119,13 @@
 }
 
 .modal-button {
-  @include size(40px, 100px);
+  @include size(58px, 120px);
   background-color: #ff7233;
   border-radius: 35px;
   border: none;
   color: #fff;
   cursor: pointer;
-  font-size: 11px;
+  font-size: 14px;
   left: -100px;
   letter-spacing: 1px;
   position: relative;

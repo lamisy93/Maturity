@@ -16,14 +16,15 @@ export default class FeaturesTeam extends Component {
   render() {
     return (
       <Fragment>
-        <h1>Campagne {this.Name}</h1>
-        <h3>25 février 2019</h3>
+        <h1 className="titrecampagne">Campagne {this.Name}</h1>
+        <h3>25 juin 2019</h3>
 
         <div className="resultat">
           <div className="tableau">
             <section>
+              <h1 className="h1title">Process</h1>
               <div className="tbl-content">
-                <table cellpadding="0" cellspacing="0" border="0">
+                <table cellPadding="0" cellSpacing="0" border="0">
                   <tbody>
                     <tr>
                       <th>A - Process: Les bases</th>
@@ -36,25 +37,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -63,25 +67,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
-                          width="25"
-                          height="25"
+                          src={require("../../../../src/wrong.png")}
+                          width="20"
+                          height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -90,25 +97,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
-                          width="20"
-                          height="20"
+                          src={require("../../../../src/checked.png")}
+                          width="25"
+                          height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -123,25 +133,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -150,25 +163,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
-                          width="20"
-                          height="20"
-                        />
-                      </td>
-                      <td>
-                        <img
-                          alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/checked.png")}
+                          width="25"
+                          height="25"
+                          style={{ margin: "auto", display: "block" }}
+                        />
+                      </td>
+                      <td>
+                        <img
+                          alt=""
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -177,25 +193,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -210,25 +229,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -237,25 +259,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -264,25 +289,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -291,25 +319,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -328,25 +359,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -356,41 +390,45 @@ export default class FeaturesTeam extends Component {
             </section>
           </div>
 
-          <div class="tableau">
+          <div className="tableau">
             <section>
-              <div class="tbl-content">
-                <table cellpadding="0" cellspacing="0" border="0">
-                  <tr>
-                    <th>A - Qualité</th>
-                    <th>Octobre 2018</th>
-                    <th>Février 2019</th>
-                    <th>Juin 2019</th>
-                  </tr>
+              <h1 className="h1title">Qualité</h1>
+              <div className="tbl-content">
+                <table cellPadding="0" cellSpacing="0" border="0">
                   <tbody>
+                    <tr>
+                      <th>A - Qualité</th>
+                      <th>Octobre 2018</th>
+                      <th>Février 2019</th>
+                      <th>Juin 2019</th>
+                    </tr>
                     <tr>
                       <td>1. Lorem ipsum ?</td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -399,25 +437,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -426,25 +467,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -453,25 +497,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -480,25 +527,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -513,25 +563,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -540,25 +593,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
-                          width="25"
-                          height="25"
+                          src={require("../../../../src/wrong.png")}
+                          width="20"
+                          height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -567,25 +623,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -594,25 +653,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
-                          width="25"
-                          height="25"
+                          src={require("../../../../src/wrong.png")}
+                          width="20"
+                          height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -621,25 +683,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
-                          width="25"
-                          height="25"
+                          src={require("../../../../src/wrong.png")}
+                          width="20"
+                          height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -654,25 +719,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -681,25 +749,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -708,25 +779,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -735,25 +809,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -768,25 +845,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -795,25 +875,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -822,25 +905,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -849,25 +935,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -882,25 +971,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -909,25 +1001,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -936,25 +1031,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -963,25 +1061,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -991,10 +1092,11 @@ export default class FeaturesTeam extends Component {
             </section>
           </div>
 
-          <div class="tableau">
+          <div className="tableau">
             <section>
-              <div class="tbl-content">
-                <table cellpadding="0" cellspacing="0" border="0">
+              <h1 className="h1title">Valeur</h1>
+              <div className="tbl-content">
+                <table cellPadding="0" cellSpacing="0" border="0">
                   <tbody>
                     <tr>
                       <th>A - Valeur : IDENTIFIER LA VALEUR</th>
@@ -1007,25 +1109,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1034,25 +1139,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1061,25 +1169,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1094,25 +1205,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
-                          width="20"
-                          height="20"
+                          src={require("../../../../src/checked.png")}
+                          width="25"
+                          height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1121,25 +1235,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1148,25 +1265,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1175,25 +1295,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1208,25 +1331,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1235,25 +1361,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1262,25 +1391,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1295,25 +1427,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1322,25 +1457,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1349,25 +1487,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1382,25 +1523,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1409,25 +1553,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>
@@ -1436,25 +1583,28 @@ export default class FeaturesTeam extends Component {
                       <td>
                         <img
                           alt=""
-                          src="../../../public/checked.png"
+                          src={require("../../../../src/checked.png")}
                           width="25"
                           height="25"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                       <td>
                         <img
                           alt=""
-                          src="../../../public/wrong.png"
+                          src={require("../../../../src/wrong.png")}
                           width="20"
                           height="20"
+                          style={{ margin: "auto", display: "block" }}
                         />
                       </td>
                     </tr>

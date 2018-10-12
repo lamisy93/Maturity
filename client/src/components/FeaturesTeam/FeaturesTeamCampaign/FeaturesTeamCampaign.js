@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import "./FeaturesTeamCampaign.scss";
 import { Link } from "react-router-dom";
 
@@ -44,11 +44,21 @@ export default class FeaturesTeamCampaign extends Component {
       }
     }
 
-    return data.map((campaign, key) => (
-      <div key={key}>
-        {campaign.namecamp} {campaign.state} {campaign.date}
-      </div>
-    ));
+    return data.map((campaign, key) => {
+      let state;
+      if (campaign.state === 0) {
+        state = "en cours";
+      } else if (campaign.state === 1) {
+        state = "Terminée";
+      } else {
+        state = "Aucune campagne";
+      }
+      return (
+        <div key={key}>
+          Campagne "{campaign.namecamp}" {state} réalisée le {campaign.date}
+        </div>
+      );
+    });
   };
 
   getCampaignsFinish = ftId => {
@@ -61,55 +71,94 @@ export default class FeaturesTeamCampaign extends Component {
         data.push(this.state.campaign[i]);
       }
     }
-    return data.map((campaign, key) => (
-      <div key={key}>
-        {"Campagne :"} {campaign.namecamp} {"Statut :"} {campaign.state}{" "}
-        {"Fait le :"}
-        {campaign.date}
-      </div>
-    ));
+
+    return data.map((campaign, key) => {
+      let state;
+      if (campaign.state === 0) {
+        state = "en cours";
+      } else if (campaign.state === 1) {
+        state = "terminée";
+      } else {
+        state = "Aucune campagne";
+      }
+      return (
+        <div key={key}>
+          Campagne {campaign.namecamp} {state} réalisée le {campaign.date}
+        </div>
+      );
+    });
   };
 
   render() {
-    if (this.state.campaign.length === 0) {
-      console.log(this.state.campaign.length);
-      return <p>Aucune campagne enregistrée</p>;
+    const ftCampaigns = this.state.campaign.filter(
+      campaign => campaign.ft_id === parseInt(this.Id)
+    );
+    if (ftCampaigns.length === 0) {
+      console.log(ftCampaigns.length);
+      return (
+        <Fragment>
+          <div className="cercle">
+            <img
+              className="noCampaign"
+              alt=""
+              src={require("../../../../src/noCampaign.png")}
+              width="500"
+              height="500"
+            />
+          </div>
+          <p className="aucune">Aucune campagne enregistrée.</p>
+        </Fragment>
+      );
     } else {
-      console.log(this.state.campaign.length);
+      console.log(ftCampaigns.length);
       return (
         <div className="ft-campaign">
           <a href="/">
-            <i class="fas fa-bars ham" alt="#" />
+            <i className="fas fa-bars ham" alt="#" />
           </a>
-          <h1 class="titre">Historique des campagnes</h1>
-          <hr class="statut" />
+          <h1 className="titre">Historique des campagnes</h1>
+          <hr className="statut" />
 
-          <div class="statut">
-            <div class="cours">
-              <i class="far fa-calendar-alt" />
+          <div className="statut">
+            <div className="cours">
               <p>Campagne en cours</p>
+              <br />
               <div>{this.getCampaignInProgress(this.Id)}</div>
+              <br />
+              <i className="fas fa-spinner" style={{ fontSize: "50px" }} />
             </div>
 
-            <div class="termine">
+            <div className="termine">
               <Link to={{ pathname: `/Result/${this.Name}/${this.Id}` }}>
-                <div class="A">
-                  <p class="termine">
+                <div className="A">
+                  <p className="termine">
                     Campagne terminée
-                    <div>{this.getCampaignsFinish(this.Id)}</div>
+                    <br />
+                    <span style={{ color: "black" }}>
+                      {this.Name}
+                      <br />
+                      25/06/2018
+                    </span>
                   </p>
-                  <i class="far fa-check-circle validate " />
+                  <div>{this.getCampaignsFinish(this.Id)}</div>
+                  <i className="far fa-check-circle validate " />
                 </div>
               </Link>
 
-              <div class="B">
-                <p class="termine">
-                  Campagne {this.Name}
-                  <br />
-                  25/10/2018
-                </p>
-                <i class="far fa-check-circle validate" />
-              </div>
+              <Link to={{ pathname: `/Result/${this.Name}/${this.Id}` }}>
+                <div className="B">
+                  <p className="termine">
+                    Campagne terminée
+                    <br />
+                    <span style={{ color: "black" }}>
+                      {this.Name}
+                      <br />
+                      23/03/2018
+                    </span>
+                  </p>
+                  <i className="far fa-check-circle validate" />
+                </div>
+              </Link>
             </div>
           </div>
         </div>
