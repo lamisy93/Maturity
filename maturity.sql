@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Oct 13, 2018 at 06:45 PM
+-- Generation Time: Oct 14, 2018 at 05:53 PM
 -- Server version: 5.7.23-0ubuntu0.18.04.1
 -- PHP Version: 7.0.31-1+ubuntu18.04.1+deb.sury.org+1
 
@@ -41,13 +41,10 @@ CREATE TABLE `campagne` (
 INSERT INTO `campagne` (`id`, `name`, `date`, `state`, `ft_id`) VALUES
 (23, 'Campagne_test_1', '2018-10-01', 0, 10),
 (35, 'JOool', '2018-10-08', 0, 10),
-(37, 'rty', '2018-10-10', 0, 4),
-(38, 'dsqjdqpqd', '2018-10-10', 0, 8),
-(46, 'Yes', '2018-10-10', 0, 5),
+(37, 'Test-maturity', '2018-10-10', 0, 4),
+(38, 'Hello', '2018-10-10', 0, 8),
 (48, 'test', '2018-10-11', 0, 2),
-(49, 'Testons', '2018-10-12', 0, 5),
-(51, 'Test-maturity', '2018-10-12', 0, 4),
-(52, 'Hello', '2018-10-13', 0, 8);
+(49, 'Testons', '2018-10-12', 0, 5);
 
 -- --------------------------------------------------------
 
