@@ -2,31 +2,15 @@
 
 // @root/api/campaignInProgress.js
 
-const campaignInProgressAPI = function campaignInProgressAPI(connection) {
-  const router = require("express").Router();
-  const campaignInProgressModel = require("../model/campaignInProgress")(
-    connection
-  );
+function campaignInProgress(req, res, connection) {
+  const campaignInProgressModel = require("../model/campaignInProgress")(connection);
+  campaignInProgressModel.campaignInProgress((err, dataset) => {
+    if (err) {
+      console.error("err in campaignInProgress", err);
+    }
+    res.send(dataset);
+  }, req.body); // post datas ici ...
+}
 
-  router.post("/campaignInProgress", (req, res) => {
-    campaignInProgressModel.create((err, dataset) => {
-      res.send(dataset);
-    }, req.body); // post datas ici ...
-  });
+module.exports = campaignInProgress;
 
-  router.get("/campaignInProgress/:id", (req, res) => {
-    campaignInProgressModel.get((err, dataset) => {
-      res.send(dataset[0]);
-    }, req.params.id);
-  });
-
-  router.get("/campaignInProgress", (req, res) => {
-    campaignInProgressModel.get((err, dataset) => {
-      res.send(dataset);
-    }, null);
-  });
-
-  return router;
-};
-
-module.exports = campaignInProgressAPI;

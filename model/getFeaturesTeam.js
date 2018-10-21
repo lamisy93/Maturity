@@ -1,6 +1,6 @@
 /*jshint esversion :  6 */
 
-// @root/model/campaignFinish.js
+// @root/model/getFeaturesTeam.js
 
 const getFeaturesTeamModel = function getFeaturesTeamModel(connection) {
     const get = function getFeaturesTeam(clbk, id) {

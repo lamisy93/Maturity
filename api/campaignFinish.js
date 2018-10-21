@@ -2,23 +2,14 @@
 
 // @root/api/campaignFinish.js
 
-const campaignFinishAPI = function campaignFinishAPI(connection) {
-  const router = require("express").Router();
-  const campaignFinishModel = require("./../model/campaignFinish")(connection);
+function campaignFinish(req, res, connection) {
+  const campaignFinishModel = require("../model/campaignFinish")(connection);
+  campaignFinishModel.campaignFinish((err, dataset) => {
+    if (err) {
+      console.error("err in campaignFinish", err);
+    }
+    res.send(dataset);
+  }, req.body); // post datas ici ...
+}
 
-  router.get("/campaignFinish/:id", (req, res) => {
-    campaignFinishModel.get((err, dataset) => {
-      res.send(dataset[0]);
-    }, req.params.id);
-  });
-
-  router.get("/campaignFinish", (req, res) => {
-    campaignFinishModel.get((err, dataset) => {
-      res.send(dataset);
-    }, null);
-  });
-
-  return router;
-};
-
-module.exports = campaignFinishAPI;
+module.exports = campaignFinish;

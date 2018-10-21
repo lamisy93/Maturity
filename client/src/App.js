@@ -1,3 +1,5 @@
+// Fichier contenant notre router et nos routes react
+
 import React, { Component } from "react";
 import "./App.scss";
 import FeaturesTeam from "./components/FeaturesTeam/FeaturesTeamCard/FeaturesTeamCard";
@@ -6,7 +8,7 @@ import Form from "./components/Form/Form";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import FeaturesTeamSection from "./components/FeaturesTeam/FeaturesTeamSection/FeaturesTeamSection";
 import FeaturesTeamCampaign from "./components/FeaturesTeam/FeaturesTeamCampaign/FeaturesTeamCampaign";
-import Result from "./components/FeaturesTeam/Campaign/Result";
+import FeaturesTeamCampaignResult from "./components/FeaturesTeam/FeaturesTeamCampaignResult/FeaturesTeamCampaignResult";
 class App extends Component {
   constructor() {
     super();
@@ -57,7 +59,7 @@ class App extends Component {
             path="/FeaturesTeamCampaign/:teamName?/:teamId?"
             component={FeaturesTeamCampaign}
           />
-          <Route path="/Result/:teamName?/:teamId?" component={Result} />
+          <Route path="/FeaturesTeamCampaignResult/:teamName?/:teamId?" component={FeaturesTeamCampaignResult} />
         </div>
       </Router>
     );

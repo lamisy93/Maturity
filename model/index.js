@@ -1,6 +1,6 @@
 /*jshint esversion :  6 */
 
-// @root/model/database.js
+// Fichier de connexion à la database
 
 const database = function database(config) {
   const mysql = require("mysql");
@@ -8,7 +8,7 @@ const database = function database(config) {
   const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "root",
+    password: "",
     database: "maturity"
   });
 

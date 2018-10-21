@@ -1,6 +1,8 @@
 /*jshint esversion :  6 */
 
-// @root/model/campaign.js
+// @root/model/campaign.
+
+// Requête pour les tests
 
 const createReponseModel = function createReponseModel(connection) {
   const createReponse = function createReponse(clbk, data) {
@@ -20,35 +22,11 @@ const createReponseModel = function createReponseModel(connection) {
     });
   };
 
-  //   const remove = function deleteCampagne(clbk, ids) {
-  //     // la clause SQL IN permet de chercher une valeur dans un tableau
-  //     const q = "DELETE FROM campagne WHERE id IN (?)";
-
-  //     connection.query(q, [ids], function(err, res, fields) {
-  //       // console.log(this.sql); // affiche la dernière requête SQL, pratique pour deboguer
-  //       if (err) return clbk(res, null);
-  //       return clbk(null, res);
-  //     });
-  //   };
-
-  //   const update = function editCampagne(clbk, user) {
-  //     const q = "UPDATE campagne SET name = ?, date = ?, status = ? WHERE id = ?";
-  //     const payload = [user.name, user.lastname, user.email, user.id];
-  //     connection.query(q, payload, function(err, res, fields) {
-  //       // console.log(this.sql); // affiche la dernière requête SQL, pratique pour deboguer
-  //       if (err) return clbk(err, null);
-  //       return clbk(null, res);
-  //     });
-  //   };
-
-  const get = function getCampaign(clbk, id) {
+  const get = function getReponse(clbk, id) {
     var sql;
 
-    if (id && !isNaN(id)) {
-      sql = "SELECT * FROM campagne WHERE id = ?";
-    } else {
-      sql = "SELECT * FROM campagne";
-    }
+      sql = "SELECT * FROM reponse WHERE id = ?";
+
 
     connection.query(sql, [id], (error, results, fields) => {
       // console.log(this.sql); // affiche la dernière requête SQL, pratique pour deboguer

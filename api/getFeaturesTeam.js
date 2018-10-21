@@ -1,6 +1,6 @@
 /* jshint esversion : 6 */
 
-// @root/api/displayCampaign.js
+// @root/api/getFeaturesTeam.js
 
 function getFeaturesTeam(req, res, connection) {
   const getFeaturesTeamModel = require("../model/getFeaturesTeam")(connection);

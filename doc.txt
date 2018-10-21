@@ -1,0 +1,5 @@
+Avant de lancer l'application :
+Lancer la commande "npm install" afin d'installer tous les packages node
+
+Lancer l'application :
+Avec la commande "yarn dev"

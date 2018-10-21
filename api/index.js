@@ -2,7 +2,7 @@
 
 // @root/api/index.js
 
-// routes de l'api
+// Fichier qui contient les require de nos fonctions ainsi que les routes de l'api
 
 var express = require("express");
 
@@ -11,6 +11,8 @@ displayCampaign = require("./displayCampaign.js");
 displayQuestions = require("./displayQuestions.js");
 createReponse = require("./campaign.js");
 getFeaturesTeam = require("./getFeaturesTeam.js");
+campaignInProgress = require("./campaignInProgress.js");
+campaignFinish = require("./campaignFinish.js");
 
 var router = express.Router();
 
@@ -27,7 +29,7 @@ router.post("/createCampaign", (req, res) => {
 router.get("/displayCampaign", (req, res) => {
   displayCampaign(req, res, database.connection);
   console.log("Corps de la requête !", req.body);
-}); // 2eme route
+});
 
 router.get("/", (req, res) => {
   displayCampaign(req, res, database.connection);
@@ -37,7 +39,7 @@ router.get("/", (req, res) => {
 router.get("/displayQuestions", (req, res) => {
   displayQuestions(req, res, database.connection);
   console.log("Corps de la requête !", req.body);
-}); // 3eme route
+});
 
 router.get("/", (req, res) => {
   displayQuestions(req, res, database.connection);
@@ -54,9 +56,14 @@ router.get("/getfeaturesTeam", (req, res) => {
   console.log("Corps de la requête !", req.body);
 });
 
-// router.get("/campaign", (req, res) => {
-//   displayReponse(req, res, database.connection);
-//   console.log("Corps de la requête !", req.body);
-// }); // 2eme route
+router.post("/campaignInProgress", (req, res) => {
+  completeCampaign(req, res, database.connection);
+  console.log("Corps de la requête !", req.body);
+});
+
+router.get("/campaignFinish", (req, res) => {
+  displayReponse(req, res, database.connection);
+  console.log("Corps de la requête !", req.body);
+});
 
 module.exports = router;

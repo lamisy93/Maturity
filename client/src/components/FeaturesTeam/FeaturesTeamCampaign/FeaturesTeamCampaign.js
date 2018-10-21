@@ -129,7 +129,7 @@ export default class FeaturesTeamCampaign extends Component {
             </div>
 
             <div className="termine">
-              <Link to={{ pathname: `/Result/${this.Name}/${this.Id}` }}>
+              <Link to={{ pathname: `/FeaturesTeamCampaignResult/${this.Name}/${this.Id}` }}>
                 <div className="A">
                   <p className="termine">
                     Campagne terminée
@@ -145,7 +145,7 @@ export default class FeaturesTeamCampaign extends Component {
                 </div>
               </Link>
 
-              <Link to={{ pathname: `/Result/${this.Name}/${this.Id}` }}>
+              <Link to={{ pathname: `/FeaturesTeamCampaignResult/${this.Name}/${this.Id}` }}>
                 <div className="B">
                   <p className="termine">
                     Campagne terminée

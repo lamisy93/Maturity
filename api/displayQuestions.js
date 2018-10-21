@@ -1,3 +1,7 @@
+/* jshint esversion : 6 */
+
+// @root/api/displayQuestions.js
+
 function displayQuestions(req, res, connection) {
   const displayQuestionsModel = require("../model/displayQuestions")(
     connection
